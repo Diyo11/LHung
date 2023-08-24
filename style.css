@@ -1,0 +1,301 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+	font-family:  "NotoSansTC-VariableFont_wght", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ---------------------------------------------------- */
+
+.firstpage{
+    background-color: black;
+	height: 100vh;
+}
+.HUN{
+    border: 2px solid white; /* 加入外框 */
+    color: black; /* 設定文字顏色為白色 */
+    padding: 10px 15px; /* 設定內距 */
+    border-radius: 5px; /*設定圓角*/
+
+    font-size: 50px;
+    /* text-shadow: 1px 0px 1px white; */
+    -webkit-text-stroke: 2px white;
+    
+    position: sticky;
+    top:25px;
+}
+
+.page1{
+	height: 100vh;
+    border:3px solid black;
+}
+
+/*-----------格子------------------------*/
+.grid-1 {
+    /* border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center; */
+
+	position: relative;
+	/* top: 0px; 
+	left: -60px; */
+}
+.grid-2 {
+	position: relative;
+	/* top: 60px; 
+	left: -10px; */
+}
+.grid-3 {
+	position: relative;
+	/* top: 60px; 
+	left: -10px; */
+}
+.grid-4 {
+	position: relative;
+	/* top: 60px; 
+	left: -10px; */
+}
+.grid-5 {
+	position: relative;
+	/* top: 60px; 
+	left: -10px; */
+}
+.grid-6 {
+	position: relative;
+	/* top: 60px; 
+	left: -10px; */
+}
+
+
+/* ----浮動------ */
+ @keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* 設定上浮幅度 */
+     } 
+}
+.float-object {
+    animation: floatAnimation 2s ease-in-out infinite; /* 2秒的動畫，緩入緩出效果，無限循環 */
+}
+/* ----- */
+
+/* ---------------------------------------------------------------
+		CSS 3D transform
+---------------------------------------------------------------*/
+.icon-cards {
+	position: relative;
+	width: 60vw;
+	height: 40vw;
+	max-width: 380px;
+	max-height: 250px;
+	margin: 0;
+	color: white;
+	perspective: 1000px;
+	transform-origin: center;
+  }
+  .icon-cards__content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-origin: center;
+	transform-style: preserve-3d;
+	transform: translateZ(-30vw) rotateY(0);
+	-webkit-animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+			animation: carousel 20s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  }
+  .icon-cards__content.step-animation {
+	-webkit-animation: carousel 8s infinite steps(1) forwards;
+			animation: carousel 8s infinite steps(1) forwards;
+  }
+  .icon-cards__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 60vw;
+	height: 40vw;
+	max-width: 380px;
+	max-height: 250px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	transform-origin: center;
+  }
+  .icon-cards__item:nth-child(1) {
+	background: #FDD94F;
+	transform: rotateY(0) translateZ(35vw);
+  }
+  .icon-cards__item:nth-child(2) {
+	background: #F87949;
+	transform: rotateY(72deg) translateZ(35vw);
+  }
+  .icon-cards__item:nth-child(3) {
+	background: #FBAB48;
+	transform: rotateY(144deg) translateZ(35vw);
+  }
+  .icon-cards__item:nth-child(4) {
+	background: #F87949;
+	transform: rotateY(216deg) translateZ(35vw);
+  }
+  .icon-cards__item:nth-child(5) {
+	background: #FBAB48;
+	transform: rotateY(288deg) translateZ(35vw);
+  }
+  @-webkit-keyframes carousel {
+	0%, 10% {
+	  transform: translateZ(-35vw) rotateY(0);
+	}
+	20%, 30% {
+	  transform: translateZ(-35vw) rotateY(-72deg);
+	}
+	40%, 50% {
+	  transform: translateZ(-35vw) rotateY(-144deg);
+	}
+	60%, 70% {
+		transform: translateZ(-35vw) rotateY(-216deg);
+	}
+	80%, 90% {
+		transform: translateZ(-35vw) rotateY(-288deg);
+	}
+	95%, 100% {
+		transform: translateZ(-35vw) rotateY(-360deg);
+	}
+	}
+  @keyframes carousel {
+	0%, 10% {
+		transform: translateZ(-35vw) rotateY(0);
+	  }
+	  20%, 30% {
+		transform: translateZ(-35vw) rotateY(-72deg);
+	  }
+	  40%, 50% {
+		transform: translateZ(-35vw) rotateY(-144deg);
+	  }
+	  60%, 70% {
+		  transform: translateZ(-35vw) rotateY(-216deg);
+	  }
+	  80%, 90% {
+		  transform: translateZ(-35vw) rotateY(-288deg);
+	  }
+	  95%, 100% {
+		  transform: translateZ(-35vw) rotateY(-360deg);
+		}
+  }
+
+  /* 這個媒體查詢會在螢幕寬度小於768px時應用樣式 */
+@media (max-width: 452px) {
+	/* .icon-cards__content, */
+	.icon-cards,
+    .icon-cards__item,
+    .icon-cards__item img,
+    .icon-cards__item span {
+		/* 設置適合手機尺寸的大小 */
+		width: 150px; /* 或者其他適當的大小 */
+		height: 100px; /* 或者其他適當的大小 */
+
+		display: flex;
+		justify-content: center; /* 垂直置中 */
+		align-items: center; /* 垂直置中 */
+    }
+  }
+
+  /* --------------------------
+ 	 分隔線 poto
+  --------------------------*/
+  .spanborder{
+	border-bottom: 3px solid #e8f3ec4e;
+	margin-bottom: 2rem;
+  }
+  .spanborder span{
+	border-bottom: 1px solid black;
+	display: inline-block;
+	padding-bottom: 20px;
+  }
+  
+
+/* --------------------------
+ 	 照片大小
+  --------------------------*/
+  .img-poto{
+	/* width: 8rem;  */
+	max-width: 35%;
+	height: auto; 
+  }
+
+    /* 這個媒體查詢會在螢幕寬度小於768px時應用樣式 */
+@media (max-width: 768px) {
+	
+	.img-poto{
+		width: 30%; 
+		height: auto; 
+    }
+  }
+
+/* --------------------------
+ 	 Compile  動態註解圖片 
+  --------------------------*/
+  .image-container {
+	position: relative;
+	display: inline-block; /* 確保文字描述與圖片內容對齊 */
+  }
+  
+  .description {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	background-color: rgba(255, 255, 255, 0.5); /* 透明白色背景 */
+	padding: 5px; /* 可以自行調整文字與邊緣的距離 */
+	border-radius: 5px; /* 圓角效果 */
+	z-index: 1; /* 將文字描述提到最前面，位於圖片上方 */
+
+	width: 90%;
+	height: 90%;
+  }
+  
+  /* 隱藏文字描述 */
+  .description.d-none {
+	display: none;
+  }
+
