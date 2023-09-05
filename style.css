@@ -18,7 +18,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 
-	font-family:  "NotoSansTC-VariableFont_wght", sans-serif;
+	/* font-family:  "NotoSansTC-VariableFont_wght", sans-serif; */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -46,7 +46,14 @@ table {
 
 
 /* ---------------------------------------------------- */
-
+@font-face {
+	font-family: 'NotoSansTC-VariableFont_wght'; /* 字體的名稱 */
+	src: url('NotoSansTC-VariableFont_wght.ttf') format('truetype'); /* 字體文件的路徑和格式 */
+  }
+body {
+	font-family: 'NotoSansTC-VariableFont_wght', sans-serif;
+  }
+  
 .firstpage{
     background-color: black;
 	height: 100vh;
@@ -68,6 +75,10 @@ table {
 .page1{
 	height: 100vh;
     border:3px solid black;
+}
+/* --------color----------------- */
+.bg-AFD3E2{
+	background-color: #AFD3E2;
 }
 
 /*-----------格子------------------------*/
@@ -290,8 +301,8 @@ table {
 	border-radius: 5px; /* 圓角效果 */
 	z-index: 1; /* 將文字描述提到最前面，位於圖片上方 */
 
-	width: 90%;
-	height: 90%;
+	width: 70%;
+	height: 70%;
   }
   
   /* 隱藏文字描述 */
@@ -299,3 +310,30 @@ table {
 	display: none;
   }
 
+  /* --------------------------
+ 	 Automation 照片大小
+  --------------------------*/
+  .img-Automation{
+	max-width: 70%;
+	height: auto; 
+  }
+  .img-AutoFoto{
+	max-width: 30%;
+	height: auto; 
+  }
+
+    /* 這個媒體查詢會在螢幕寬度小於768px時應用樣式 */
+/* @media (max-width: 768px) {
+	
+	.img-Automation{
+		width: 50%; 
+		height: auto; 
+    }
+	.img-AutoFoto{
+		display: flex;
+  		justify-content: center;	
+		align-items: center;
+		max-width: 50%;
+		height: auto; 
+	  }
+  } */
