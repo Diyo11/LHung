@@ -1,0 +1,75 @@
+<!--https://mtache.com/bootstrap/-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Login</title>
+
+    <link rel="stylesheet" type="text/css" href="static\css\loginStyles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="[[ url_for('static', filename='css/loginStyles.css') ]]"> -->
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+
+    <!-- <style type="text/css">
+        .jumbotron {
+          padding: 4rem 2rem;
+          margin-bottom: 2rem;
+          background-color: var(--bs-light);
+          border-radius: .3rem;  
+        }
+    </style> -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>生活。冒險</h1>
+            <p>起床重睡，加入遊戲拉啦！</p>
+        </div>
+        <form  action="PHP\login.php" method="post">
+            <h2>Login</h2>
+            <label for="StudNumber1">Student ID:</label>
+            <input type="text" id="StudNumber1" name="StudNumber" placeholder="Student Number (OR phone)" required>
+            <button type="submit" id="login-button">Login</button>         
+        </form>
+        <div class="create">
+            <button class="create-button">create</button>
+            <button class="create-button">create</button>
+            <button class="create-button">create</button>
+        </div>
+
+
+        
+
+    </div>
+    <script src="static\js\java.js"></script> 
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <a href="https://forms.gle/g5mL93qAEX7MoYkdA">BUG報報</a>
+              </div>
+              <div class="footer-item">
+                <a href="https://web.csie2.nptu.edu.tw/~cbb110115/">WEB</a>
+              </div>
+              <div class="footer-item">
+                <a href="https://forms.gle/FdWgRcZHnnxTw2n86">回饋單單</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+
+</html>
+  <!-- flask run
+        http://localhost:5000/
+    -->
+

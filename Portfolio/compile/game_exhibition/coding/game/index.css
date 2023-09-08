@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+#background {
+  margin: 0 auto;
+  max-width: 60em;
+  background: url(bg.png) #5f5762;
+  background-position: center;
+  border-radius: 50px;
+}
+
+#band {
+  margin: 0 auto;
+  margin-top: 1.5em;
+  width: auto;
+  /* height: 6.25em; */
+  background-color: #333;
+  border-radius: 0.9375em;
+  font-size: 1.5625em;
+  line-height: 2em;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+#bgImg {
+  position: relative;
+}
+
+#bg {
+  position: relative;
+  margin: 0 auto;
+  width: 20em;
+  /* background-color: #5d7182; */
+  overflow: hidden;
+  opacity: 0.98;
+}
+
+.box,
+#mybox {
+  position: absolute;
+  width: 2.8125em;
+  height: 3.75em;
+  background-color: #333;
+  margin-bottom: 20%;
+  background: url(block1.png);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+#mybox {
+  height: 95px;
+  background: url(mycar.png);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+#btnUp,
+#btnDown,
+#btnLeft,
+#btnRight {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  font-size: 25px;
+  line-height: 50px;
+  border-radius: 20%;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  margin-right: 10.5px;
+}
+
+
+
+/* @media only screen and (min-width: 600px) {
+  #background {
+    max-width: 90%;
+  }
+
+  #band {
+    width: 35%;
+    height: 10%;
+    font-size: 1.5em;
+    line-height: 3.125em;
+  }
+
+  #bg {
+    width: 90%;
+  }
+
+  .box,
+  #mybox {
+    width: 3em;
+    height: 4em;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  #background {
+    max-width: 80%;
+  }
+
+  #band {
+    width: 30%;
+    height: 10%;
+    font-size: 1.875em;
+    line-height: 3.75em;
+  }
+
+  #bg {
+    width: 50%;
+  }
+
+  .box,
+  #mybox {
+    width: 3.75em;
+    height: 5em;
+  }
+} */
